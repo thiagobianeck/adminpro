@@ -5,13 +5,18 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTES } from './app.routes';
 
 // Modulos
+import {PagesModule} from './pages/pages.module';
 
+// temporário
+import {FormsModule} from '@angular/forms';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
+
+// Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-// temporário
-import {FormsModule} from '@angular/forms';
-import {PagesModule} from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,7 @@ import {PagesModule} from './pages/pages.module';
     APP_ROUTES,
     FormsModule,
     PagesModule,
+    ServiceModule
   ],
   providers: [],
   exports: [

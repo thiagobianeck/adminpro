@@ -14,6 +14,7 @@ import {PAGES_ROUTES} from './pages.routes';
 import {IncrementadorComponent} from '../components/incrementador/incrementador.component';
 import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.component';
 import {CommonModule} from '@angular/common';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {CommonModule} from '@angular/common';
     PagesComponent,
     IncrementadorComponent,
     GraficoDonaComponent,
+    AccountSettingsComponent,
   ],
   exports: [
     DashboardComponent,
